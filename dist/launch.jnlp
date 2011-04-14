@@ -9,6 +9,9 @@
     <icon href="icons.png" kind="default"/>
 </information>
 <update check="background"/>
+<security>
+<all-permissions/>
+</security>
     <resources>
 <j2se version="1.6+"/>
 <jar href="dataclient.jar" main="true"/>
