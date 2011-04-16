@@ -152,7 +152,7 @@ public class ClientFrame extends javax.swing.JFrame {
         jtabbed.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
         getContentPane().add(jtabbed, java.awt.BorderLayout.CENTER);
 
-        jMenu1.setText("File");
+        jMenu1.setText(bundle.getString("menu.file")); // NOI18N
 
         jMenuItem1.setText(bundle.getString("label.connect")); // NOI18N
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {

@@ -34,11 +34,11 @@ import org.apache.hadoop.hbase.util.Pair;
  *
  * @author adrian
  */
-public class HTableScripting {
+public class TableScripting {
 
     private HTable table;
 
-    public HTableScripting(HTable table) {
+    public TableScripting(HTable table) {
         this.table = table;
     }
 

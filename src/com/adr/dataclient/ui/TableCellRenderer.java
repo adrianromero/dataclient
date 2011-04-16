@@ -27,11 +27,11 @@ import javax.swing.table.DefaultTableCellRenderer;
  *
  * @author adrian
  */
-public class BasicTableCellRenderer extends DefaultTableCellRenderer {
+public class TableCellRenderer extends DefaultTableCellRenderer {
 
     private int[] columnalign;
 
-    public BasicTableCellRenderer(int[] columnalign) {
+    public TableCellRenderer(int[] columnalign) {
         this.columnalign = columnalign;
     }
 

@@ -82,7 +82,7 @@ public class ClientTable extends ClientPanel {
 
         // SwingConstants: LEFT, CENTER, RIGHT, LEADING, or TRAILING
         jTableResults.getTableHeader().setReorderingAllowed(false);
-        jTableResults.setDefaultRenderer(Object.class, new BasicTableCellRenderer(new int[]{
+        jTableResults.setDefaultRenderer(Object.class, new TableCellRenderer(new int[]{
             SwingConstants.LEADING,
             SwingConstants.LEADING,
             SwingConstants.LEADING
@@ -211,7 +211,7 @@ public class ClientTable extends ClientPanel {
             ScriptEngineManager factory = new ScriptEngineManager();
             // create a JavaScript engine
             engine = factory.getEngineByName("javascript");
-            engine.put("table", new HTableScripting(table));
+            engine.put("table", new TableScripting(table));
             engine.eval(
                       "var scan = function() {\n"
                     + "    if (arguments.length == 0) { return table.scan();}\n"

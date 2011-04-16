@@ -41,7 +41,7 @@ public class About extends javax.swing.JDialog {
     private static final ResourceBundle bundle = java.util.ResourceBundle.getBundle("com/adr/dataclient/ui/i18n/messages"); // NOI18N
 
     public static final String APP_NAME = "Data Client";
-    public static final String APP_VERSION = "0.90.0";
+    public static final String APP_VERSION = "0.90.1";
     public static final String APP_COPYRIGHT = "Copyright (c) 2011 Adrián Romero Corchado.";
 
     /** Creates new form About */
