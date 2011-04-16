@@ -27,6 +27,21 @@
     pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
+
+	.imgbox	{
+		text-align:center;
+
+		border:1px solid gray;
+		margin:4px;
+		margin-bottom:8px;
+		padding:0px;
+	}
+	.thumbnail {
+		width:640px;
+
+		margin:3px;
+	}
+
   </style>
 </head>
 
@@ -35,23 +50,44 @@
 
   <div id="container">
 
-    <div class="download">
-      <a href="http://github.com/adrianromero/dataclient/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/adrianromero/dataclient/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="http://github.com/adrianromero/dataclient">dataclient</a>
+    <h1><a href="http://github.com/adrianromero/dataclient">Data Client</a>
       <span class="small">by <a href="http://github.com/adrianromero">adrianromero</a></span></h1>
 
     <div class="description">
-      Data Client is a graphical user interface for HBase
+      Data Client is a graphical user interface for HBase with administrative and query functions.
     </div>
 
-    
+    <h2>Features</h2>
+    <div>
+	<ul>
+	  <li><b>Connections management.</b> Administer all the HBase connections easily. Data Client can create, edit and connect to several HBase clusters.</li>
+	  <li><b>Administration capabilities.</b> Administer your HBase table and family column properties. With Data Client you can create new HBase tables update its properties, enable and disable. The same with family columns you can browse, edit, modifiy and delete graphicaly with Data Client.</li>
+	  <li><b>Query functions</b>. Data Client has basic query functions to scan data in tables, create, update and delete data. With the included functions to query HBase data and the scripting capabilities you have all the flexibility to manage HBase data.</li>
+	</ul>	
+    </div>
+
+    <h2>Screenshots</h2>
+
+    <div>
+    <div class="imgbox">
+    <img class="thumbnail" src="hbase-administer.png"/><br/>
+    Administer HBase tables.
+    </div>
+    <div class="imgbox">
+    <img class="thumbnail" src="hbase-query.png"/><br/>
+    Query HBase tables.
+    </div>
+
+    </div>
 
     <h2>Download</h2>
+    
+    <p>
+    You can download the latest binaries of this project in
+    <a href="https://github.com/downloads/adrianromero/dataclient/dataclient-0.90.1.tar.gz">Data Client 0.90.1</a>. To run Data Client, uncompress the binaries package, go to that folder and execute: 
+    <pre>$ java -jar dataclient.jar</pre>
+    </p>
+    
     <p>
       You can download this project in either
       <a href="http://github.com/adrianromero/dataclient/zipball/master">zip</a> or
@@ -62,8 +98,14 @@
       <pre>$ git clone git://github.com/adrianromero/dataclient</pre>
     </p>
 
+    <h2>License</h2>
+    <p>
+    Data Client is published under the terms of the licence <a href="http://gplv3.fsf.org/">GPL v3</a>.
+    </p>
+
     <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/adrianromero/dataclient">adrianromero/dataclient</a>
+      get the source code on GitHub : <a href="http://github.com/adrianromero/dataclient">adrianromero/dataclient</a><br/>
+      Copyright (C) 2011 Adrián Romero Corchado.
     </div>
 
   </div>
