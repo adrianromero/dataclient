@@ -1,9 +1,0 @@
-== Data Client ==
-
-Data Client is a graphical user interface for HBase with administrative and query functions.
-
-== Features ==
-
-* Connections management. Data Client can create, edit and connect to several HBase clusters.
-* Administration. With Data Client you can manage HBase tables and family columns.
-* Query. Data Client has basic query functions to scan data in tables, create, update and delete data.
